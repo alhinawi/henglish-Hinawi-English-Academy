@@ -7,7 +7,7 @@ export const ScenarioConversationReview: React.FC<{scenario:SimulationScenario; 
  const {t,dir}=useLanguage();
  const [opened,setOpened]=useState<string|null>(null);
  const [revisions,setRevisions]=useState<Record<string,string>>({});
- return <section aria-label={t('rle.review.title')} className="rounded-2xl border border-cyan-200/20 bg-[#0c0b20] p-2 sm:p-4 text-start space-y-4" dir={dir}>
+ return <section aria-label={t('rle.review.title')} className="rounded-2xl border-0 border-cyan-200/20 bg-transparent p-0 sm:border sm:bg-[#0c0b20] sm:p-4 text-start space-y-4" dir={dir}>
   <h3 className="text-xl font-black text-cyan-100">{t('rle.review.title')}</h3>
   <p className="text-sm leading-7 text-slate-300">{t('rle.review.note')}</p>
   {scenario.turns.map((turn,index)=>{
