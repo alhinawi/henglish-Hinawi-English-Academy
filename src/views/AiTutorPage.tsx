@@ -963,7 +963,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                 ? t('at.listening')
                 : `${t('at.askPre')} ${t(`atm.${activeMode}.name`)}...`
             }
-            className="flex-1 min-w-0 px-4 py-3 rounded-2xl bg-[#151430] border border-white/15 text-white text-xs sm:text-sm focus:outline-none focus:border-[#ffd166] transition-colors"
+            className="flex-1 min-w-0 px-2 py-3 sm:px-4 rounded-2xl bg-[#151430] border border-white/15 text-white text-base sm:text-sm focus:outline-none focus:border-[#ffd166] transition-colors"
           />
 
           {/* Regenerate Button if messages exist */}
