@@ -340,7 +340,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                     <span className="text-xs text-[#b9b6d5] mr-2">({currentTurn.speakerRole})</span>
                   </div>
 
-                  <LessonSpeechButton key={currentTurn.id} text={currentTurn.textEn} label={t('rle.playAudio')} className="p-2 rounded-xl bg-white/10 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer flex items-center gap-1 text-xs font-bold" />
+                  <LessonSpeechButton key={currentTurn.id} text={currentTurn.textEn} label={t('rle.playAudio')} className="min-h-11 min-w-11 p-2 rounded-xl bg-white/10 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer flex items-center gap-1 text-xs font-bold" />
                 </div>
 
                 <p className="text-left font-sans text-base sm:text-lg font-bold text-white leading-relaxed" dir="ltr" lang="en">
